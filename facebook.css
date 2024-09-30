@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #171515;
+    border-bottom: 1px solid #252525;
+}
+
+.header .left{
+    display: flex;
+    padding: 20px;
+}
+
+.header .left img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header .left input{
+    padding: 7px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #333333;
+    color: white;
+    font-size: 17px;
+    position: relative;
+}
+
+.header .left i{
+    position: absolute;
+    left: 100px;
+    top: 38px;
+    font-size: 17px;
+
+}
+
+.header .center{
+    padding: 27px;
+    margin-left: -10%;
+}
+.header .center ul{
+    display: flex;
+}
+.header .center ul li{
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.header .center ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 25px;
+    color: #c6c4c4;
+
+}
+
+
+.header .center ul li a:hover{
+    background-color: #545555;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+.header  .center ul li a:active{
+    color: #015bd1;
+}
+
+
+
+.header .right ul{
+    display: flex;
+    padding: 20px;
+}
+
+.header .right ul li{
+    list-style-type: none;
+    margin-right: 20px;
+    margin-top: 3%;
+}
+
+.header .right ul li a{
+    text-decoration: none;
+    color: rgb(202, 199, 199);
+    font-size: 25px;
+    padding: 5px;
+    color: #c6c4c4;
+}
+
+.header .right ul li a:hover{
+    color: #e5e1e1;
+}
+
+
+
+
+/* main section */
+.main{
+    display: flex;
+}
+
+.main .left ul li a{
+    font-size: 15px;
+    padding: 10px;
+    margin: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.main .left ul li a i{
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+#pro{
+    background-color: pink;
+    border-radius: 50%;
+    font-size: 25px;
+}
+
+.main .left #blue{
+    color: #015bd1;
+}
+
+hr{
+    width: 219px;
+    margin-left: 10%;
+   border: 0.3px solid #a69f9f;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.main .left h3{
+    margin-left: 13%;
+    color: #a69f9f;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.main .left .arrow{
+    transform: rotate(90deg);
+}
+
+   /* Wax ka dhig div fixed ah oo aan dhaqaaqaynin */
+  .main .left {
+    position: fixed; /* Waa mid joogto meel gaar ah */
+    top: 100px; /* Masaafada sare */
+    left: 0px; /* Masaafada bidix */
+    width: 350px; /* Ballaca div-ka */
+    height: 500px; /* Dhererka div-ka */
+    /* background-color: #0d0c0c; Midab ka soo jeeda */
+    padding: 1px; /* Gudaha spacing */
+    overflow: hidden; /* Default ahaan, scroll ma jiro */
+    transition: all 0.3s ease; /* Xawaaraha isbadalka marka la dul dhigo */
+}
+.main .left ul li{
+    list-style: none ; 
+}
+
+/* Marka mouse-ka la dul dhigo, scroll bar muuqata */
+.left:hover {
+    overflow: auto; /* Waa mid la scroll gareyn karo */
+}
+
+/* Dheeraad ahaan qaabka icon-ka */
+.info li a,
+.moreinfo li a {
+    display: center;
+    align-items: left;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 3px;
+}
+
+.info li a i,
+.moreinfo li a i {
+    margin-right: 10px;
+}
+
+.main .center .search{
+    position: absolute;
+    margin-top: 10%;
+    width: 470px;
+    height: 140px;
+    left: 430px;
+    background-color: #65636357;
+    border-radius: 20px;
+}
+
+
+.main .center{
+    margin-left: 5%;
+}
+
+.main .center .create{
+    position: absolute;
+    margin-top: 22%;
+    width: 470px;
+    height: 80px;
+    left: 430px;
+    background-color: #53535362;
+    border-radius: 20px;
+}
+
+.main .center .post{
+    position: absolute;
+    margin-top: 31%;
+    width: 470px;
+    height: 570px;
+    left: 430px;
+    background-color: #53535362;
+    border-radius: 20px;
+}
+
+.main .right  .img h1{
+    color: #b9b4b4;
+    text-align: center;
+    font-size: 29px;
+    
+}
+
+.main .right .img{
+    /* position: absolute; */
+    margin-top: 10%;
+    width: 300px;
+    height: 400px;
+    left: 950px;
+    /* background-color: #53535362; */
+    border-radius: 20px;
+    position: fixed;
+}
+.main .right .img .con img{
+    width: 130px;
+    height: 130px;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.main .right .img .con {
+    display: flex;
+}
+
+.main .right .img .con h3{
+
+    color: #b9b4b4;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.main .right .img .con p{
+    color: #b9b4b4;
+    margin-left: 10px;
+}
+
+
+.dots:hover{
+   /* color: #a69f9f; */
+   cursor: pointer;
+   background-color: #c6c4c44e;
+   padding: 4px 8px;
+   border-radius: 50px;
+}
+
+.main .center .search ul{
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.main .center .search ul li{
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+.main .center .search ul li a{
+    text-decoration: none;
+    color: #c6c4c4;
+    font-size: 18px;
+}
+
+.main .center .search ul li a:hover{
+    color: #015bd1;
+}
+
+
+.main .center .search input{
+    width: 390px;
+    height: 39px;
+    border-radius: 10px;
+    background-color: #b9b4b4;
+    padding: 8px;
+    border: none;
+    margin-left: -10px;
+    font-size: 15px;
+}
+
+.main .center .search input::placeholder{
+    color: #ffffff;
+    font-size: 18px;
+}
+.main .center .search img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+
+.main .center .search ol{
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .center .search ol li{
+    list-style-type: none;
+    margin-right: 10px;
+    color: #e1dcdc;
+}
+
+.main .center .search ol li .red{
+    color: red;
+    font-size: 20px;
+}
+
+.main .center .search ol li .green{
+    color: green;
+    font-size: 20px;
+}
+
+.main .center .search ol li .brown{
+    color: rgb(225, 32, 54);
+    font-size: 20px;
+}
+
+.main .center .create{
+    display: flex;
+}
+
+.main .center .create .plusbtn{
+    width: 40px;
+    height: 40px;
+    background-color: #2c73cf5e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 45px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 10px;
+   margin-top: 15px;
+   margin-right: 9px;
+}
+
+.main .center .create .plusbtn:hover{
+    background-color: #004998;
+}
+
+.main .center .create .qoral{
+    margin-top: 15px;
+}
+
+.main .center .create .qoral p{
+    color: #b9b4b4;
+}
+
+.post .img img{
+    width: 100%;
+    height: 320px;
+}
+.post .txt{
+    display: flex;
+}
+.post .txt img{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.post p{
+    margin-left: 10px;
+}
+
+.post .txt .t h4{
+    color: #b9b4b4;
+margin-top: 10px;    
+margin-left: 10px;
+}
+
+.post .txt .t span{
+    color: #b9b4b4;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.post .faalo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.post .faalo i{
+    color: #b9b4b4;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.post .faalo span{
+    color: #b9b4b4;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.post .faalo .heart{
+    color: #972222;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.post .icons ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.post .icons ul li{
+    list-style-type: none;
+    margin-left: 10px;
+}
+.post .icons ul li i{
+    margin-left: 4px;
+}
